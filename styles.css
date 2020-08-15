@@ -40,7 +40,30 @@
     --highlight: green;
   }       
 
-  .carousel-indicators li{
+  /* .carousel-indicators li{
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%!important;
+    margin-left: 10px!important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 40px!important;
+    height: 40px!important; 
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html,body{
+    position: relative;
+    overflow-x: hidden;
+}
+body {
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    color: #717174!important;
+    font-weight: 400;
+    font-size:20px!important;
+}
+
+.carousel-indicators li{
     width: 10px!important;
     height: 10px!important;
     border-radius: 50%!important;
@@ -49,4 +72,14 @@
 .carousel-control-next-icon, .carousel-control-prev-icon{
     width: 40px!important;
     height: 40px!important;
+}
+.car-top {
+    top: 0;
+    bottom: auto;
+}
+.car-middle{
+    padding-bottom: 250px!important;
+}
+h1{
+    font-weight: 500!important;
 }
