@@ -9,10 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/scss" href="styles/styles.scss">
     <link href="https://fonts.googleapis.com/css?family=Helvetica&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da834d174b.js" crossorigin="anonymous"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+    <script src="/path/to/cdn/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <title>TheSagez</title>
 </head>
@@ -54,7 +59,10 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="view">
-                        <img class="d-block w-100 " height="700px" src="images/new5.jpg" alt="First slide">
+                        <picture>
+                            <source media="(max-width:500px)" srcset="images/res1.jpg">
+                            <img class="d-block w-100 " height="700px" src="images/new3.jpg" alt="First slide">
+                        </picture>
                         <div class="mask rgba-black-light"></div>
                     </div>
                     <div class="carousel-caption title car-middle animate__animated animate__zoomIn">
@@ -127,6 +135,130 @@
         <!--/.Carousel Wrapper-->
     </section>
 
+
+    <div class="container" style="margin:150px auto">
+        <h1>Featured Products</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider ml-lg-5 ml-md-5 mt-5 py-lg-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="imgContainer ml-lg-n5 mt-lg-0 mt-md-0 ml-md-n5 mt-n5">
+                                <div class="image">
+                                    <img src="images/p1.jpg" />
+                                </div>
+                                <div class="image">
+                                    <img src="images/p2.jpg" />
+                                </div>
+                                <div class="image">
+                                    <img src="images/p3.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <!-- slider -->
+                            <div id="productSlider" class="carousel slide carousel-fade pr-lg-5 py-lg-0 py-4"
+                                data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="content">
+
+                                            <div class="title">
+                                                Seed Pencils
+                                            </div>
+                                            <div class="desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Error itaque, libero dignissimos nihil aliquam
+                                                eveniet tenetur cupiditate consectetur quod modi
+                                                repellendus veniam, repellat iusto fugiat temporibus
+                                                officia facere nulla nam.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="content">
+
+                                            <div class="title">
+                                                Seed Paper Bookmarks
+                                            </div>
+                                            <div class="desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Error itaque, libero dignissimos nihil aliquam
+                                                eveniet tenetur cupiditate consectetur quod modi
+                                                repellendus veniam, repellat iusto fugiat temporibus
+                                                officia facere nulla nam.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="content">
+
+                                            <div class="title">
+                                                Seed Pens
+                                            </div>
+                                            <div class="desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Error itaque, libero dignissimos nihil aliquam
+                                                eveniet tenetur cupiditate consectetur quod modi
+                                                repellendus veniam, repellat iusto fugiat temporibus
+                                                officia facere nulla nam.
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- indicators -->
+                                <ol class="carousel-indicators indicators">
+                                    <li data-target="#productSlider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#productSlider" data-slide-to="1"></li>
+                                    <li data-target="#productSlider" data-slide-to="2"></li>
+                                </ol>
+                                <!-- indicators -->
+                            </div>
+                            <!-- slider -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 
 
 
