@@ -85,7 +85,7 @@ h1{
 }
 
 @media (max-width:325px){
-  img{
+  .frst-part img{
     height: 500px;
   }
 }
