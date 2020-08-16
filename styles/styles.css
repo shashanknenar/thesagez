@@ -56,9 +56,8 @@ html,body{
     overflow-x: hidden;
 }
 body {
-    line-height: 1.2;
+    line-height: 27px!important;
     font-family: 'Poppins', sans-serif;
-    color: #717174!important;
     font-weight: 400;
     font-size:20px!important;
 }
@@ -97,9 +96,9 @@ h1{
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Monserat";
   background-image: -webkit-gradient(linear, left top, right top, from(#78d15d), to(#99fe6a));
-  background-image: linear-gradient(90deg, #f8f8f8, #e6e9e6);
+  background-image: linear-gradient(90deg, #ffffff, #ffffff);
   height: 100vh;
 }
 
@@ -338,3 +337,74 @@ body {
           transition-delay: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+h1{
+  font-weight: 500!important;
+}
+
+.wrapper{
+  margin-top: 90px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.a-card{
+  padding:0 3%!important;
+}
+.a-dot{
+  color: rgb(92, 90, 90);
+}
+.a-head{
+  font-weight: 700!important;
+}
+@media (max-width:576px){ 
+  .a-card{
+    width: 50%!important;
+    padding:0!important;
+}  
+  .a-dot{
+      display: none;
+  }
+}
+@media (max-width:600px){
+  .a-text{
+      width: 95%;
+  }
+}
+@media (max-width:426px){
+  .a-text{
+      font-size: 15px;
+  }
+  .a-card{
+      width: 70%!important;
+  }
+}
+@media (max-width:325px){
+  .a-card{
+      width: 100%!important ;
+  }
+}
+
+.container h1{
+  @media (max-width:576px){ 
+    .a-card{
+      width: 50%!important;
+      padding:0!important;
+  }  
+    .a-dot{
+        display: none;
+    }
+  }
+  @media (max-width:600px){
+    margin-left:400px !important;
+  }
+  @media (max-width:426px){
+    margin-left:400px !important;
+
+  }
+  @media (max-width:325px){
+    margin-left:400px !important;
+
+  }
+  
+}

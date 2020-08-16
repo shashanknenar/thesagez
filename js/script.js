@@ -13,3 +13,5 @@ $(document).ready(function () {
       slider(getActiveSlideIndex());
     });
   });
+
+  
